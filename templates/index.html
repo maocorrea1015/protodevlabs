@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="../static/images/logo.png">
+   
+
+    <title>ProtoDev Labs</title>
+</head>
+
+<body>
+    <header>
+        <!-- Background Image -->
+        <div class="background-image"></div>
+        
+        <!-- Semi-transparent Overlay -->
+        <div class="rectangle-overlay"></div>
+
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/">Inicio</a>
+                <a href="/proyecto">Proyecto</a>
+                <a href="/abaut">Nosotros</a>
+            </div>
+        </nav>
+        <div class="des">
+            <h1>Proto &lt;/Dev&gt; Labs</h1>
+            <p>Innovación y Creatividad para Desarrollar el Futuro Digital.</p>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form method="POST" action="/">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" required>
+                <input type="email" name="correo" placeholder="Correo" required>
+                <textarea name="descripcion_del_proyecto" placeholder="Descripción del proyecto" rows="4" required></textarea>
+                <button type="submit" onclick="mostrarAlerta()">Enviar</button>
+            </form>
+            
+        </div>
+        
+        <!-- Image added below the form -->
+        <div class="hero-image-web-development"></div>
+    </header>
+
+    <section class="services">
+        <div>
+            <div class="hero-image-software-development"><img src="{{ url_for('static', filename='images/softwareamedida.png') }}" alt="software a la medida" class="software-heading"></div>
+            <h2 class="software-heading">Software a la medida</h2>
+        </div>
+        <div>
+            <div class="hero-image-web-development"><img src="{{ url_for('static', filename='images/web.jpeg') }}" alt="desarollo web" class="desarrollo-heading"></div>
+            <h2 class="desarrollo-heading">Desarrollo web</h2>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ProtoDev Labs. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function mostrarAlerta() {
+            alert('¡Gracias por preferirnos! Te contactaremos en 2 a 3 días hábiles.');
+        }
+    </script>    
+</body>
+
+
+</html>

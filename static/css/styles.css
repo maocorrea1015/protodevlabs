@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    
+    background: rgba(255, 255, 255, 0.5) url('../images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+}
+/* Navigation Container */
+nav {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 68px;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto-sized column for logo, flexible column for navigation */
+    align-items: center; /* Vertically center items */
+    padding: 0 40px; /* Padding on left and right for space around */
+    background: rgba(217, 217, 217, 0.4);
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Logo Container */
+.logo {
+    grid-column: 1; /* Logo in the first column */
+}
+
+/* Logo Image */
+.logo img {
+    height: 40px; /* Adjust height to make the logo smaller */
+    width: 40p; /* Maintain aspect ratio */
+}
+
+/* Navigation Links Container */
+.nav-links {
+    grid-column: 2; /* Navigation links in the second column */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Space between links */
+}
+
+/* Navigation Links */
+nav a {
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded pill shape */
+    background: transparent; /* Remove background color */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Roboto', sans-serif; /* Consistent font family */
+    font-size: 14px; /* Adjust as needed */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background color on hover */
+    color: #333; /* Darker text color on hover */
+}
+
+
+
+/*nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}*/
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    margin-top: 60px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.contact-form {
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 90%; /* Ajusta este valor para dejar algo de margen en los lados */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 35%;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.des{
+    width: 40%;
+    top: 60%;
+    transform: translateY(100%);
+
+}

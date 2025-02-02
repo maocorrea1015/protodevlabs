@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    
+    background: rgba(255, 255, 255, 0.5) url('../images/fondo.png') no-repeat center center;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+}
+/* Navigation Container */
+nav {
+    position: absolute;
+    width: 100%; /* Full width */
+    height: 68px;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Auto-sized column for logo, flexible column for navigation */
+    align-items: center; /* Vertically center items */
+    padding: 0 40px; /* Padding on left and right for space around */
+    background: rgba(217, 217, 217, 0.4);
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Logo Container */
+.logo {
+    grid-column: 1; /* Logo in the first column */
+}
+
+/* Logo Image */
+.logo img {
+    height: 40px; /* Adjust height to make the logo smaller */
+    width: 40p; /* Maintain aspect ratio */
+}
+
+/* Navigation Links Container */
+.nav-links {
+    grid-column: 2; /* Navigation links in the second column */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 10px; /* Space between links */
+}
+
+/* Navigation Links */
+nav a {
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded pill shape */
+    background: transparent; /* Remove background color */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Roboto', sans-serif; /* Consistent font family */
+    font-size: 14px; /* Adjust as needed */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background color on hover */
+    color: #333; /* Darker text color on hover */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    margin-top: 60px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    justify-items: center; /* Centra horizontalmente el contenido */
+    padding: 20px;
+}
+
+section {
+    background-color: #f5f5f5; /* Color de fondo claro */
+    border: 1px solid #ddd; /* Borde suave */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h2 {
+    text-align: center; /* Centra los títulos */
+    color: #333; /* Color de texto más oscuro para los títulos */
+}
+
+.te {
+    text-align: justify; /* Justifica el texto del párrafo */
+    color: #666; /* Color de texto ligeramente más suave */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.des{
+    width: 40%;
+    top: 60%;
+    transform: translateY(100%);
+
+}
+.abaut {
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    transform: translateY(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+}
+iframe {
+    width: 70%; /* Ocupa todo el ancho del contenedor */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    border: none; /* Elimina el borde predeterminado */
+}
+

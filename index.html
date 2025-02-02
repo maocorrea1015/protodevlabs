@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProtoDev Labs - Nueva Estrategia</title>
+  <style>
+    /* Reset de márgenes y relleno */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Estilos del header */
+    header {
+      background-color: #4C51BF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sección principal */
+    main {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      color: #4C51BF;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      background-color: #4C51BF;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #434190;
+    }
+
+    /* Sección de contacto */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sección de contacto al final */
+    #contacto {
+      margin-top: 50px;
+      padding: 50px;
+      background-color: #f4f4f4;
+    }
+
+    #contacto h3 {
+      font-size: 2rem;
+      color: #4C51BF;
+      margin-bottom: 20px;
+    }
+
+    #contacto p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    #contacto .cta-btn {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>ProtoDev Labs</h1>
+    <nav>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2>¡Cambiamos nuestra estrategia!</h2>
+    <p>En <strong>ProtoDev Labs</strong>, hemos decidido dejar atrás el software a medida. Ahora nos enfocamos en desarrollar productos propios e innovadores que mejoren la experiencia de nuestros usuarios.</p>
+    <p>Actualmente, estamos lanzando nuestro sistema de <strong>streaming de audio en vivo</strong>, ideal para crear podcasts y radios online. Además, tenemos en desarrollo un sistema de <strong>facturación electrónica</strong> que estará disponible pronto.</p>
+    
+    <!-- Botones de contacto -->
+    <a href="https://wa.me/573119123456" class="cta-btn">Contáctanos en WhatsApp</a>
+    <a href="mailto:info@protodevlabs.com" class="cta-btn">Enviar correo</a>
+  </main>
+
+  <!-- Contact Section -->
+  <section id="contacto">
+    <h3>¡Estamos aquí para ayudarte!</h3>
+    <p>Si tienes preguntas sobre nuestros productos o quieres más información sobre cómo podemos ayudarte a lanzar tu radio o podcast, no dudes en ponerte en contacto con nosotros.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ProtoDev Labs. Todos los derechos reservados.</p>
+    <p><a href="mailto:info@protodevlabs.com">info@protodevlabs.com</a></p>
+  </footer>
+
+  <!-- JavaScript para interactividad -->
+  <script>
+    document.querySelectorAll('.cta-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('¡Gracias por ponerte en contacto! Nos comunicaremos pronto.');
+      });
+    });
+  </script>
+
+</body>
+</html>

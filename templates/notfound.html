@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="icon" href="img/monkey404.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles404.css') }}">
+    
+</head>
+
+<body>
+    <h1>404 Not Found</h1>
+    <p>Oops! The content appears to be unavailable.</p>
+    <img src="{{ url_for('static', filename='images/monkey404.png') }}" alt="Example Image">
+    <p><a href="/" class="button">Return to Home</a></p>
+</body>
+</html>

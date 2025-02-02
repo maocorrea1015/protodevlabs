@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/abaut.css') }}">
+    <link rel="icon" href="../static/images/logo.png">
+   
+
+    <title>ProtoDev Labs</title>
+</head>
+
+<body>
+    <header>
+        <!-- Background Image -->
+        <div class="background-image"></div>
+        
+        <!-- Semi-transparent Overlay -->
+        <div class="rectangle-overlay"></div>
+
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/">Inicio</a>
+                <a href="/proyecto">Proyecto</a>
+                <a href="/abaut">Nosotros</a>
+            </div>
+        </nav>
+        <div class="des">
+            <h1>Proto &lt;/Dev&gt; Labs</h1>
+            <p>Innovación y Creatividad para Desarrollar el Futuro Digital.</p>
+        </div>
+        <div class="contact-form">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="abaut">
+            
+        </div>
+        
+        
+        <!-- Image added below the form -->
+        <div class="hero-image-web-development"></div>
+    </header>
+
+<div class="content">
+    
+     
+    
+    <section >
+        <h2>Misión:</h2>
+        <p class="te">En ProtoDev Labs, nuestra misión es impulsar la innovación
+            y la creatividad a través del desarrollo de soluciones de software
+            personalizadas que transformen ideas en realidades tangibles.
+            Nos comprometemos a ofrecer productos y servicios de alta calidad
+            que superen las expectativas de nuestros clientes, contribuyendo
+            al avance tecnológico y al crecimiento sostenible de sus negocios.
+        </p>
+    </section>
+    <section>
+        <h2>visión:</h2>
+        <p class="te">
+            Ser reconocidos como líderes en la industria del software,
+            destacándose por nuestra capacidad de innovación, excelencia
+            técnica y compromiso con la satisfacción del cliente. En ProtoDev Labs,
+            aspiramos a ser el socio preferido para empresas de todos los tamaños,
+            creando un impacto positivo y duradero en el mundo digital.
+        </p>
+    </section>
+    
+    
+    <iframe src="../static/pdf/rut.pdf" ></iframe>
+</div>
+
+
+    
+
+    <footer>
+        <p>&copy; 2024 ProtoDev Labs. Todos los derechos reservados.</p>
+    </footer>
+   
+</body>
+
+
+</html>

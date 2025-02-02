@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #566dd4;
+    background-color: #1C2C40;
+    font-family: Arial, sans-serif;
+    color: #fff8f8;
+}
+h1 {
+    font-size: 48px;
+}
+p {
+    font-size: 24px;
+}
+img {
+    width: 300px;
+    height: auto;
+}
+/* Estilo llamativo para el botón */
+a {
+    background-color: #ff0000; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+a:hover {
+    background-color: #00b32d; /* Cambio de color al pasar el cursor */
+}
